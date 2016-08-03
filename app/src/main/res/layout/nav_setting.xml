@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@+id/info">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="INFO"
+            android:textSize="15dp"
+            />
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow android:id="@+id/privacy">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="25dp"
+            />
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow android:id="@+id/about">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="About"
+            android:textSize="25dp"
+            />
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow android:id="@+id/ack">
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Acknowledgements"
+            android:textSize="25dp"
+            />
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+</TableLayout>

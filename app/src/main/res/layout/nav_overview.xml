@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/overview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ECEFF1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                />
+            <ImageView
+                android:layout_width="400dp"
+                android:id="@+id/piechartImage"
+                android:layout_centerHorizontal="true"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/slider"
+                android:src="@drawable/ic_piechart"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/piechartTitle"
+                android:layout_below="@id/piechartImage"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="@string/title_piechart"
+                />
+            <ImageView
+                android:layout_width="400dp"
+                android:id="@+id/linechartImage"
+                android:layout_centerHorizontal="true"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/piechartTitle"
+                android:src="@drawable/ic_linechart"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/linechartTitle"
+                android:layout_below="@id/linechartImage"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="@string/title_linechart"
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

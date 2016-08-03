@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="auburn.com.diabetes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BookDetail"
+            android:label="@string/title_activity_book_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddReading"
+            android:label="@string/title_activity_add_reading"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReadingDetail"
+            android:label="@string/title_activity_reading_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".QuizDetail"
+            android:label="@string/title_activity_quiz_detail"
+            android:parentActivityName=".Quiz"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.Quiz" />
+        </activity>
+        <activity
+            android:name=".Piechart"
+            android:label="@string/title_activity_piechart"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Linechart"
+            android:label="@string/title_activity_linechart"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Advertisements"
+            android:label="@string/title_activity_advertisements"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddMedication"
+            android:label="@string/title_activity_add_medication"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MedicationDetail"
+            android:label="@string/title_activity_medication_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingDetail"
+            android:label="@string/title_activity_setting_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="auburn.com.diabetes.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

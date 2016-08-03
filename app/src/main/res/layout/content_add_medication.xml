@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="auburn.com.diabetes.AddMedication"
+    tools:showIn="@layout/activity_add_medication">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                android:hint="Name:"
+                />
+            <EditText
+                android:id="@+id/form"
+                android:layout_below="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                android:hint="Form:  e.g. Capsule"
+                />
+            <EditText
+                android:id="@+id/dosage"
+                android:layout_below="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:hint="Dosage:  e.g. 500"
+                />
+            <EditText
+                android:id="@+id/unit"
+                android:layout_below="@+id/dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                android:hint="Unit:  e.g. mg"
+                />
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="150dp"
+                android:hint="Add your note here"
+                android:gravity="top"
+                android:inputType="textAutoCorrect"
+                android:layout_below="@+id/unit"
+                />
+            <Spinner
+                android:id="@+id/interval"
+                android:layout_below="@id/note"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/input_date"
+                android:layout_below="@+id/interval"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Select The Start Date"
+                android:textColor="#00aaff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:id="@+id/input_time"
+                android:layout_below="@+id/input_date"
+                android:text="Select The Start Time"
+                android:textColor="#00aaff"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

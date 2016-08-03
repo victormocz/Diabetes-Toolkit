@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_overall" android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="Overview" />
+        <item android:id="@+id/nav_readings" android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="Readings" />
+        <item android:id="@+id/nav_medication" android:icon="@drawable/ic_medication"
+            android:title="Medication" />
+        <item android:id="@+id/nav_education" android:icon="@drawable/ic_education"
+            android:title="Education" />
+        <item android:id="@+id/nav_quiz" android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="Quiz" />
+        <item android:id="@+id/nav_website" android:icon="@drawable/ic_web_black_24dp"
+            android:title="Website" />
+        <item android:id="@+id/nav_setting" android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Setting" />
+    </group>
+
+    <item android:title="Send to your doctor">
+        <menu>
+            <item android:id="@+id/nav_email" android:icon="@android:drawable/ic_dialog_email"
+                android:title="Email" />
+            <item android:id="@+id/nav_message" android:icon="@drawable/ic_message_black_24dp"
+                android:title="Message" />
+        </menu>
+    </item>
+
+</menu>

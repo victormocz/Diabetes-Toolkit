@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:paddingBottom="10dp"
+    >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="All Readings"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <ListView
+        android:id="@+id/allreadinglist"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

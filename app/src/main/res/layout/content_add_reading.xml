@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_reading" tools:context="auburn.com.diabetes.AddReading">
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:hint="Name:"
+        />
+    <EditText
+        android:id="@+id/input_bg"
+        android:layout_below="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Blood Glucose (mg/dL):"
+        />
+    <TextView
+        android:id="@+id/datetitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/input_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Date and Time"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/input_date"
+        android:layout_below="@+id/datetitle"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Select The Date"
+        android:textColor="#00aaff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:id="@+id/input_time"
+        android:layout_below="@+id/input_date"
+        android:text="Select The Time"
+        android:textColor="#00aaff"
+        />
+    <TextView
+        android:id="@+id/notetitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/input_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Daily Notes"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/input_note"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="150dp"
+        android:hint="Add your note here"
+        android:gravity="top"
+        android:inputType="textAutoCorrect"
+        android:layout_below="@+id/notetitle"
+        />
+</RelativeLayout>
